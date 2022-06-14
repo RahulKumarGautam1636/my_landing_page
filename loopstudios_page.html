@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App Name Landing page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script defer src="js/fontawesome-all.min.js"></script>
+    <style media="screen">
+      body { font-family: 'Josefin Sans', sans-serif; }
+      #section-hero {
+        background: url(images/desktop/image-hero.jpg);
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+      }
+      #section-hero .container > div {
+        position: absolute;
+        width: 90%;
+        max-width: 41rem;
+        bottom: 23%;
+        letter-spacing: 2px;
+      }
+      #leader {
+        width: 43%;
+      }
+      #leader h2 {
+        font-size: clamp(2rem, 4vw, 3rem) !important;
+        margin-bottom: 1.5vw;
+      }
+      #leader strong {
+        font-size: clamp(1rem, 3vw, 1.1rem) !important;
+        line-height: clamp(1.5rem, 2.2vw, 2.5rem);
+      }
+      #see_all {
+        font-family: 'Alata', sans-serif;
+      }
+      @media only screen and (max-width: 992px) {
+        #leader {
+          position: relative !important;
+          width: 100%;
+          text-align: center;
+        }
+        #quickLinks {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-transparent navbar-expand-lg fixed-top py-5">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"/></a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScrollingDefault" aria-controls="navbarScrollingDefault" aria-expanded="false" aria-label="toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScrollingDefault">
+          <ul class="navbar-nav navbar-nav-scroll ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CAREERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SUPPORT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="section-hero">
+      <div class="container position-relative vh-100">
+        <div class="border border-2 text-white py-4 ps-2 ps-sm-4 d-grid rounded-2">
+          <p class="display-2 lh-2 mb-0 mt-2">IMMERSIVE <br>
+             EXPERIENCES <br>
+             THAT DELIEVER</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-vr" class="py-5 bg-white">
+      <div class="container">
+        <div class="row g-0 position-relative">
+          <div class="col col-12 col-lg-9">
+            <img class="img-fluid w-100" src="images/desktop/image-interactive.jpg" alt="vr">
+          </div>
+          <div id="leader" class="col col-12 col-lg-3 bg-light position-absolute bottom-0 end-0 p-1 p-lg-5 pb-lg-0 d-flex flex-column justify-content-end">
+            <h2 class="display-4 text-nowrap mt-5 mt-lg-0">THE LEADER IN <br>
+               INTERACTIVE VR</H2>
+            <strong class="text-muted mt-3 mt-lg-0">Founded in 2011, Loopstudios has been producing world-class virtual reality projects
+              for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-creations">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+          <h2 class="display-6 mx-auto mx-lg-0">OUR CREATIONS</h2>
+          <button id="see_all" type="button" class="btn btn-outline-dark d-none d-lg-block border border-dark border-2 px-5 rounded-0" name="button">SEE ALL</button>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 mb-5 gx-4 gy-4">
+          <div class="col text-center"><img id="deep" class="rounded-3 img-fluid" src="images/desktop/image-deep-earth.jpg" /></div>
+          <div class="col text-center"><img id="night" class="rounded-3 img-fluid" src="images/desktop/image-night-arcade.jpg" /></div>
+          <div class="col text-center"><img id="soccer" class="rounded-3 img-fluid" src="images/desktop/image-soccer-team.jpg" /></div>
+          <div class="col text-center"><img id="grid" class="rounded-3 img-fluid" src="images/desktop/image-grid.jpg" /></div>
+          <div class="col text-center"><img id="from" class="rounded-3 img-fluid" src="images/desktop/image-from-above.jpg" /></div>
+          <div class="col text-center"><img id="pocket" class="rounded-3 img-fluid" src="images/desktop/image-pocket-borealis.jpg" /></div>
+          <div class="col text-center"><img id="curiosity" class="rounded-3 img-fluid" src="images/desktop/image-curiosity.jpg" /></div>
+          <div class="col text-center"><img id="fisheye" class="rounded-3 img-fluid" src="images/desktop/image-fisheye.jpg" /></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white mt-4 py-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 pt-3">
+          <div class="col d-flex mb-5 mb-lg-0">
+            <ul id="quickLinks" class="nav mx-auto ms-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link text-white active" aria-current="page" href="#"><strong>ABOUT</strong></a>
+              </li>
+              <li class="nav-item mb-4 mb-lg-0">
+                <a class="nav-link text-white" href="#"><strong>CAREERS</strong></a>
+              </li>
+              <li class="nav-item mb-4 mb-lg-0">
+                <a class="nav-link text-white" href="#"><strong>EVENTS</strong></a>
+              </li>
+              <li class="nav-item mb-4 mb-lg-0">
+                <a class="nav-link text-white" href="#"><strong>PRODUCTS</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"><strong>SUPPORT</strong></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column justify-content-between">
+                <ul class="nav mx-auto me-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fab fa-facebook text-white h3"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-twitter text-white h3"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-pinterest text-white h3"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" tabindex="-1" aria-disabled="true" href="#"><i class="fab fa-instagram text-white h3"></i></a>
+                  </li>
+                </ul>
+                <h5 class="text-center mx-auto me-lg-0 mt-3 mt-md-5" style="font-family: sans-serif;">&copy;2021 Loopstudios. All rights Reserved.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      var x = window.matchMedia("(max-width: 992px)");
+      myFunction(x);
+      x.addListener(myFunction);
+      function myFunction(x) {
+          if (!x.matches) {
+             document.querySelector("#deep").src = "images/desktop/image-deep-earth.jpg";
+             document.querySelector("#night").src = "images/desktop/image-night-arcade.jpg";
+             document.querySelector("#soccer").src = "images/desktop/image-soccer-team.jpg";
+             document.querySelector("#grid").src = "images/desktop/image-grid.jpg";
+             document.querySelector("#from").src = "images/desktop/image-from-above.jpg";
+             document.querySelector("#pocket").src = "images/desktop/image-pocket-borealis.jpg";
+             document.querySelector("#curiosity").src = "images/desktop/image-curiosity.jpg";
+             document.querySelector("#fisheye").src = "images/desktop/image-fisheye.jpg";
+          } else {
+             document.querySelector("#deep").src = "images/mobile/image-deep-earth.jpg";
+             document.querySelector("#night").src = "images/mobile/image-night-arcade.jpg";
+             document.querySelector("#soccer").src = "images/mobile/image-soccer-team.jpg";
+             document.querySelector("#grid").src = "images/mobile/image-grid.jpg";
+             document.querySelector("#from").src = "images/mobile/image-from-above.jpg";
+             document.querySelector("#pocket").src = "images/mobile/image-pocket-borealis.jpg";
+             document.querySelector("#curiosity").src = "images/mobile/image-curiosity.jpg";
+             document.querySelector("#fisheye").src = "images/mobile/image-fisheye.jpg";
+          }
+          console.log("breakpoint reached.");
+      }
+    </script>
+  </body>
+</html>
